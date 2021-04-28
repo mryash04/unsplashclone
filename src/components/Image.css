@@ -1,0 +1,53 @@
+.image{
+    display:flex;
+    flex-wrap:wrap;
+    height:8vh;
+    width:100%;
+    background-color:#f5f5f5;
+    margin:auto;
+    margin-top:2rem;
+}
+
+.inputItem{
+    margin:auto;
+}
+
+.inputItem input{
+    height:30px;
+    width:300px;
+}
+
+button{
+    height:35px;
+    width:100px;
+    margin-left:1rem;
+    cursor:pointer;
+    text-align:center;
+}
+
+.image-gallery{
+    display:grid;
+    grid-template-columns:repeat(5, 1fr);
+    grid-gap:10px;
+    margin-top:4rem;
+    padding-left:2rem;
+}
+
+.image-gallery img{
+    height:300px;
+    width:250px;
+}
+
+@media(max-width : 460px){
+    .inputItem{
+        margin-top:4px;
+    }
+
+    .inputItem input{
+        width:auto;
+    }
+
+    .image-gallery{
+        display:block;
+    }
+}
